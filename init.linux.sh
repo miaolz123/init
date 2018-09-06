@@ -10,6 +10,7 @@ if [[ -e /etc/debian_version ]]; then
   INSTALLER=apt
 elif [[ -e /etc/centos-release || -e /etc/redhat-release ]]; then
   OS=centos
+  INSTALLER=yum
 else
   echo "Looks like you aren't running this installer on Debian, Ubuntu or CentOS"
   exit
