@@ -82,6 +82,7 @@ echo '
 
 if !(which fzf >/dev/null 2>&1); then
   git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf && $HOME/.fzf/install --all
+  zsh "$HOME/.zshrc"
 fi
 
 echo '
