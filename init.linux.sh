@@ -146,7 +146,7 @@ if [ $INSTALL_DOCKER -eq 1 ]; then
   fi
 
   if !(which docker-compose >/dev/null 2>&1); then
-    sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
   fi
 fi
